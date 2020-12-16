@@ -158,25 +158,26 @@
     \centering
     \vspace{-0.2cm}
     \begin{subfigure}{0.5\textwidth}
-      \includegraphics[width = 1.0\textwidth]{xplus1K1K.png}
+      \includegraphics[width = 1.0\textwidth]{NaivePulls/xplus1K1K.png}
       \caption{$x_+$ pull}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-      \includegraphics[width = 1.0\textwidth]{xminus1K1K.png}
+      \includegraphics[width = 1.0\textwidth]{NaivePulls/xminus1K1K.png}
       \caption{$x_-$ pull}
     \end{subfigure}
     \begin{subfigure}{0.5\textwidth}
-      \includegraphics[width = 1.0\textwidth]{yplus1K1K.png}
+      \includegraphics[width = 1.0\textwidth]{NaivePulls/yplus1K1K.png}
       \caption{$y_+$ pull}
     \end{subfigure}%
     \begin{subfigure}{0.5\textwidth}
-      \includegraphics[width = 1.0\textwidth]{yminus1K1K.png}
+      \includegraphics[width = 1.0\textwidth]{NaivePulls/yminus1K1K.png}
       \caption{$y_-$ pull}
     \end{subfigure}
   \end{figure}
 \end{frame}
 
 \section{Attempts at better binning scheme}
+\subsection{Rectangular binning scheme}
 \begin{frame}{Rectangular binning scheme}
   \begin{itemize}
     \item{Inspired by \href{https://arxiv.org/abs/1709.03467}{arXiv:1709.03467}}
@@ -197,6 +198,173 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Rectangular binning scheme}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{X3X4Phase.png}
+    \caption{Strong phase differences in the $(x_3, x_4)$ plane}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Rectangular binning scheme}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{X3X4PhaseRegion1.png}
+    \caption{Strong phase differences in the $(x_3, x_4)$ plane}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Rectangular binning scheme}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{X3X4PhaseRegions.png}
+    \caption{Strong phase differences in the $(x_3, x_4)$ plane}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Description of rectangular scheme}
+  \begin{itemize}
+    \item{Define upper right corner as bin $0$ and $1$}
+    \item{Divide the $(x_3, x_4)$ plane into regions}
+    \item{Make a $100\times 100\times 100$ grid in $(x_1, x_2, x_5)$ volume}
+    \item{For each gridpoint in $(x_1, x_2, x_5)$, average strong phases over $(x_3, x_4)$}
+    \item{Sort each gridpoint into one of $6$ bins according to strong phase}
+    \item{$6 + 2 = 8$ bins}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/xplus1K1K.png}
+      \caption{$x_+$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/xminus1K1K.png}
+      \caption{$x_-$ pull}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/yplus1K1K.png}
+      \caption{$y_+$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/yminus1K1K.png}
+      \caption{$y_-$ pull}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/rB1K1K.png}
+      \caption{$r_B$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/dB1K1K.png}
+      \caption{$\delta_B$ pull}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/gamma1K1K.png}
+      \caption{$\gamma$ pull}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Fitted $\gamma$ values}
+  $\gamma$ precision of $21^\circ$
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{SophisticatedPulls/gammafitted1K1K.png}
+    \caption{Histogram of fitted $\gamma$ values}
+  \end{figure}
+\end{frame}
+
+\subsection{Amplitude model binning}
+\begin{frame}{Amplitude model binning}
+  \begin{itemize}
+    \item{Calculate strong phase difference of each event}
+    \item{Divide into evenly spaced bins according to their strong phase difference}
+    \item{$8$ bins}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Amplitude model binning}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{EvenStrongPhaseBins.png}
+    \caption{Histogram of strong phases, with black lines indicating bins}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/xplus1K1K.png}
+      \caption{$x_+$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/xminus1K1K.png}
+      \caption{$x_-$ pull}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/yplus1K1K.png}
+      \caption{$y_+$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/yminus1K1K.png}
+      \caption{$y_-$ pull}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/rB1K1K.png}
+      \caption{$r_B$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/dB1K1K.png}
+      \caption{$\delta_B$ pull}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{AmplitudePulls/gamma1K1K.png}
+      \caption{$\gamma$ pull}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Fitted $\gamma$ values}
+  $\gamma$ precision of $15.4^\circ$
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{AmplitudePulls/gammafitted1K1K.png}
+    \caption{Histogram of fitted $\gamma$ values}
+  \end{figure}
+\end{frame}
+
+\subsection{Amplitude model binning optimized for interference}
+\begin{frame}{Maximize interference terms}
+  \begin{block}{Event yield in bin $i$}
+    $N^-_i = h_{B^-}\Big(K_i + \big(x_-^2 + y_-^2\big)\bar{K_i} + 2\sqrt{K_i\bar{K_i}}\big(x_-c_i + y_-s_i\big)\Big)$
+    $N^+_i = h_{B^+}\Big(\bar{K_i} + \big(x_+^2 + y_+^2\big)K_i + 2\sqrt{K_i\bar{K_i}}\big(x_+c_i - y_+s_i\big)\Big)$
+  \end{block}
+  \begin{itemize}
+    \item{Difference of interference terms $\propto\sin(\delta_D + \gamma)$}
+    \item{Choose bins such that $\sin(\delta_D + \gamma)$ always has the same sign in each bin}
+  \end{itemize}
+\end{frame}
+
+\section{Summary}
 \begin{frame}{Summary and next steps}
   Summary:
   \begin{itemize}
@@ -205,6 +373,10 @@
     \item{Can reach $14.8^\circ$ with $>30$ bins}
   \end{itemize}
   Any suggestions for improving the binning scheme?
+\end{frame}
+
+\begin{frame}
+  Backup slides
 \end{frame}
 
 \end{document}
