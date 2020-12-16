@@ -52,7 +52,7 @@
 \date{\today}
 
 \titlegraphic{\includegraphics[width = 4cm]{lhcb.jpg}\hspace{3cm}~%
-              \includegraphics[width = 4cm]{ckmfitter.png}}
+              \includegraphics[width = 3cm]{ckmfitter.png}}
 
 \begin{document}
 
@@ -65,7 +65,7 @@
   \tableofcontents
 \end{frame}
 
-\section{Background}
+\section{Current progress}
 \begin{frame}{Current progress}
   \begin{itemize}
     \item{Events generated in AmpGen using amplitude model \href{https://arxiv.org/abs/1811.08304}{arXiv:1811.08304}}
@@ -79,6 +79,7 @@
   \end{itemize}
 \end{frame}
 
+\section{Unbinned fit}
 \begin{frame}{Unbinned fit with amplitude model}
   \vspace{-0.3cm}
   \begin{align*}
@@ -95,10 +96,10 @@
       \item{$\delta_B = \SI{115(11)}{\degree}$}
       \item{$r_B = \SI{0.098(17)}{}$}
     \end{itemize}
+    \item{Pulls of $\gamma$, $\delta_B$ and $r_B$ all have mean $0$ and std $1$ (see backup slides)}
   \end{itemize}
 \end{frame}
 
-\section{Unbinned fit with amplitude model}
 \begin{frame}{Unbinned fit of $\SI{2e3}{}$ events with amplitude model}
   \begin{figure}
     \centering
@@ -118,7 +119,7 @@
   \end{figure}
 \end{frame}
 
-\section{Binned fit of \texorpdfstring{$D\to K^+K^-\pi^+\pi^-$}{D to K+K-pi+pi-}}
+\section{Binned fit and pull studies}
 \begin{frame}{Binned fit of $D\to K^+K^-\pi^+\pi^-$}
   \vspace{-0.5cm}
   \begin{align*}
@@ -175,8 +176,10 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Need a more sophisticated binning scheme!}
+\section{Attempts at better binning scheme}
+\begin{frame}{Rectangular binning scheme}
   \begin{itemize}
+    \item{Inspired by \href{https://arxiv.org/abs/1709.03467}{arXiv:1709.03467}}
     \item{$4$-body phase space is $5$-dimensional}
     \item{Convenient to choose rectangular coordinates}
   \end{itemize}
@@ -190,9 +193,7 @@
     \end{align*}
   \end{block}
   \begin{itemize}
-    \item{Define binning scheme in terms of these coordinates}
-    \item{Ideally have a constant strong phase difference in each bin}
-    \item{Determine binning scheme based on amplitude model, but final fit is model independent}
+    \item{Study phase space in terms of these coordinates}
   \end{itemize}
 \end{frame}
 
