@@ -153,7 +153,7 @@
   \end{block}
 \end{frame}
 
-\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+\begin{frame}{Naive binning pull study}
   \begin{figure}
     \centering
     \vspace{-0.2cm}
@@ -198,7 +198,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Rectangular binning scheme}
+\begin{frame}{Rectangular $(x_3, x_4)$ plane}
   \begin{figure}
     \centering
     \includegraphics[width = 1.0\textwidth]{X3X4Phase.png}
@@ -206,7 +206,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Rectangular binning scheme}
+\begin{frame}{Rectangular $(x_3, x_4)$ plane}
   \begin{figure}
     \centering
     \includegraphics[width = 1.0\textwidth]{X3X4PhaseRegion1.png}
@@ -214,7 +214,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Rectangular binning scheme}
+\begin{frame}{Rectangular $(x_3, x_4)$ plane}
   \begin{figure}
     \centering
     \includegraphics[width = 1.0\textwidth]{X3X4PhaseRegions.png}
@@ -233,7 +233,7 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+\begin{frame}{Rectangular binning pull study}
   \begin{figure}
     \centering
     \vspace{-0.2cm}
@@ -256,7 +256,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+\begin{frame}{Rectangular binning pull study}
   \begin{figure}
     \centering
     \vspace{-0.2cm}
@@ -301,7 +301,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+\begin{frame}{Amplitude model binning pull study}
   \begin{figure}
     \centering
     \vspace{-0.2cm}
@@ -324,7 +324,7 @@
   \end{figure}
 \end{frame}
 
-\begin{frame}{Pull study with $\SI{2e3}{}$ events}
+\begin{frame}{Amplitude model binning pull study}
   \begin{figure}
     \centering
     \vspace{-0.2cm}
@@ -366,12 +366,86 @@
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Optimized amplitude model binning}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudeStrongPhaseBins.png}
+    \caption{Histogram of strong phases, with black lines indicating bins}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Optimized amplitude model binning $D$ hadronic parameters}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitude_8_cs.png}
+      \caption{$c_i$ vs $s_i$}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitude_8_KKbar.png}
+      \caption{$K_i$ and $\bar{K_i}$}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Optimized amplitude model binning pull study}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/xplus1K1K.png}
+      \caption{$x_+$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/xminus1K1K.png}
+      \caption{$x_-$ pull}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/yplus1K1K.png}
+      \caption{$y_+$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/yminus1K1K.png}
+      \caption{$y_-$ pull}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Optimized amplitude model binning pull study}
+  \begin{figure}
+    \centering
+    \vspace{-0.2cm}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/rB1K1K.png}
+      \caption{$r_B$ pull}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/dB1K1K.png}
+      \caption{$\delta_B$ pull}
+    \end{subfigure}
+    \begin{subfigure}{0.5\textwidth}
+      \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/gamma1K1K.png}
+      \caption{$\gamma$ pull}
+    \end{subfigure}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Fitted $\gamma$ values}
+  $\gamma$ precision of $15.1^\circ$
+  \begin{figure}
+    \centering
+    \includegraphics[width = 1.0\textwidth]{OptimizedAmplitudePulls/gammafitted1K1K.png}
+    \caption{Histogram of fitted $\gamma$ values}
+  \end{figure}
+\end{frame}
+
 \section{Summary}
 \begin{frame}{Summary and next steps}
   Summary:
   \begin{itemize}
     \item{Unbinned fit: $11^\circ$ precision with $2000$ events}
-    \item{Binned fit: $15.3^\circ$ with $8$ bins}
+    \item{Binned fit: $15.1^\circ$ with $8$ bins}
     \item{Can reach $14.8^\circ$ with $>30$ bins}
   \end{itemize}
   Any suggestions for improving the binning scheme?
